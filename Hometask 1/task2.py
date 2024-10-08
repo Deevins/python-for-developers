@@ -1,4 +1,3 @@
-# Функция для выполнения деления с обработкой исключений
 def divide_numbers(first_num: float, second_num: float) -> float:
     try:
         result = first_num / second_num
@@ -10,6 +9,7 @@ def divide_numbers(first_num: float, second_num: float) -> float:
         print("Ошибка: деление на ноль невозможно.")
 
 
+# P. S - я уже реализовал проверку кривого ввода в прошлой задаче - поэтому просто копирую.
 def main() -> None:
     try:
         num1 = input("Введите первое число: ")
