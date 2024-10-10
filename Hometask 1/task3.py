@@ -54,3 +54,7 @@ def main() -> None:
     # Обработка исключений для отрицательного числа
     except NegativeNumberError as e:
         print(e)
+
+
+if __name__ == "__main__":
+    main()

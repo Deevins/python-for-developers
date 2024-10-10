@@ -23,3 +23,7 @@ def main() -> None:
     # Обработка ошибок некорректного ввода (когда строку невозможно преобразовать)
     except ValueError as e:
         print(e)
+
+
+if __name__ == "__main__":
+    main()

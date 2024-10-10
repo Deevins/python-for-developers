@@ -40,3 +40,7 @@ def main() -> None:
     # Обработка ошибок некорректного ввода
     except ValueError as ve:
         print(ve)
+
+
+if __name__ == "__main__":
+    main()
