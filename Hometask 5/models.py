@@ -70,10 +70,10 @@ class Library(BaseModel):
             raise ValueError(f"Книга с UUID '{book_uuid}' не найдена в библиотеке.")
 
         book = found_books[0]
-        if not book.isAvailable:
+        if not book.is_available:
             raise BookNotAvailable(f"Книга с UUID '{book_uuid}' уже занята.")
 
-        return not book.isAvailable
+        return not book.is_available
 
     def borrow_book(self, book_uuid: UUID) -> Book:
         """

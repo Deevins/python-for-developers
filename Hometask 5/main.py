@@ -26,7 +26,7 @@ def main() -> None:
     print(first_book)
 
     try:
-        print(library.is_book_borrowed("Python 101"))
+        print(library.is_book_borrowed(first_book.uuid))
 
     except BookNotAvailable as e:
         print(e)
