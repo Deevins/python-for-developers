@@ -89,8 +89,6 @@ class Store(BaseModel):
     def create_order(self) -> Order:
         return Order()
 
-    class Config:
-        arbitrary_types_allowed = True
 
     def __repr__(self):
         return f"Магазин({len(self.products)} товаров)"
